@@ -1,0 +1,39 @@
+/* template keyframe animasi */
+@keyframes gantiBackground {
+    /*opsi 1*/
+    /*from{background-color: blueviolet;}
+    to{background-color: aqua;}*/
+
+    /* opsi 2 */
+    /*0%{background-color: rgb(224, 81, 25);}
+    50%%{background-color: yellow;}
+    100%{background-color: rgb(255, 0, 170);}*/
+
+    0%{background-position: left;}
+    100%{background-position: right;}
+}
+
+body{
+                                        /* arah gr,    warna awal, warna akhir */
+    background-image: linear-gradient(to right, #7addd6 0%, #eab662 100%);
+    background-size: 400%;
+    animation: gantiBackground 6s infinite alternate;
+    padding-left: 60px;
+}
+
+.div1{
+    height: 245px;
+    width: 300px;
+    background-color: #393436;
+    margin-bottom: 40px;
+}
+.div1:hover{
+    transform: scale(1.05);
+             /* h v spread bayangan */
+             box-shadow: 0 0 50px rgba          
+}
+.div2{
+    height: 245px;
+    width: 300px;
+    background-color: #e73c7e;
+}
