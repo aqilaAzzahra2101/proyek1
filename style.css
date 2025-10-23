@@ -1,39 +1,110 @@
-/* template keyframe animasi */
-@keyframes gantiBackground {
-    /*opsi 1*/
-    /*from{background-color: blueviolet;}
-    to{background-color: aqua;}*/
-
-    /* opsi 2 */
-    /*0%{background-color: rgb(224, 81, 25);}
-    50%%{background-color: yellow;}
-    100%{background-color: rgb(255, 0, 170);}*/
-
-    0%{background-position: left;}
-    100%{background-position: right;}
+/* Styling dasar untuk body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #c8d9e8); /* Latar belakang gradien lembut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
 }
 
-body{
-                                        /* arah gr,    warna awal, warna akhir */
-    background-image: linear-gradient(to right, #7addd6 0%, #eab662 100%);
-    background-size: 400%;
-    animation: gantiBackground 6s infinite alternate;
-    padding-left: 60px;
-}
-
-.div1{
-    height: 245px;
+/* Styling untuk Card Utama */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 20px; /* Sudut melengkung */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Bayangan yang halus */
     width: 300px;
-    background-color: #393436;
-    margin-bottom: 40px;
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.3s ease-in-out;
 }
-.div1:hover{
-    transform: scale(1.05);
-             /* h v spread bayangan */
-             box-shadow: 0 0 50px rgba          
+
+.profile-card:hover {
+    transform: translateY(-5px); /* Efek melayang saat di-hover */
 }
-.div2{
-    height: 245px;
-    width: 300px;
-    background-color: #e73c7e;
+
+/* Header (untuk gambar profil) */
+.card-header {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover;
+    border: 5px solid #a3b1c6; /* Border elegan di sekitar foto */
+    box-shadow: 0 0 0 5px #e0e5ec;
+}
+
+/* Body Card (teks dan info) */
+.card-body h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.8em;
+    color: #2c3e50;
+}
+
+.card-body .role {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.card-body .bio {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Footer Card (ikon sosial media) */
+.card-footer {
+    margin-bottom: 25px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 8px;
+    color: #ffffff;
+    font-size: 1.1em;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Warna-warna ikon sosial media */
+.instagram { background-color: #e4405f; }
+.twitter { background-color: #1da1f2; }
+.linkedin { background-color: #0077b5; }
+.github { background-color: #333; }
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol Kontak */
+.contact-btn {
+    background: linear-gradient(45deg, #3498db, #2c3e50); /* Gradien untuk tombol */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(45deg, #2980b9, #1a252f);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
