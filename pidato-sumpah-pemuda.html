@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pidato Sumpah Pemuda</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: "🎯";
+            font-size: 1.2em;
+        }
+
+        .points {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .points li {
+            background: #f8f9fa;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .points li:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .points li::before {
+            content: attr(data-number);
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .quote {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #2d3436;
+            box-shadow: 0 5px 15px rgba(253, 203, 110, 0.3);
+        }
+
+        .quote::before {
+            content: "💬";
+            font-size: 1.5em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background: #2d3436;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .sumpah-box {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+        }
+
+        .sumpah-box h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .sumpah-box ol {
+            font-size: 1.1em;
+            line-height: 2;
+            padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .section-title {
+                font-size: 1.4em;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            .points li {
+                padding-left: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🇮🇩 PIDATO SUMPAH PEMUDA 🇮🇩</h1>
+            <p>Memperingati Semangat Persatuan dan Kesatuan Bangsa Indonesia</p>
+        </div>
+
+        <div class="content">
+            <!-- Pembukaan -->
+            <div class="section">
+                <h2 class="section-title">Pembukaan</h2>
+                <ul class="points">
+                    <li data-number="1">Assalamualaikum Warahmatullahi Wabarakatuh dan Salam Sejahtera untuk kita semua</li>
+                    <li data-number="2">Yang terhormat [sebutkan nama pejabat/guru/dosen yang hadir]</li>
+                    <li data-number="3">Serta hadirin yang saya hormati</li>
+                    <li data-number="4">Pertama-tama, marilah kita panjatkan puji syukur ke hadirat Tuhan Yang Maha Esa atas segala rahmat dan karunia-Nya sehingga kita dapat berkumpul di tempat ini dalam keadaan sehat walafiat</li>
+                </ul>
+            </div>
+
+            <!-- Isi: Sejarah -->
+            <div class="section">
+                <h2 class="section-title">Sejarah Sumpah Pemuda</h2>
+                <ul class="points">
+                    <li data-number="1">Pada tanggal 28 Oktober 1928, para pemuda Indonesia berkumpul di Jakarta untuk mengikrarkan tekad persatuan</li>
+                    <li data-number="2">Kongres Pemuda II ini dihadiri oleh berbagai organisasi pemuda dari seluruh Nusantara</li>
+                    <li data-number="3">Mereka mengesampingkan perbedaan suku, agama, dan daerah demi satu tujuan: Indonesia Merdeka</li>
+                    <li data-number="4">Dari kongres inilah lahir ikrar Sumpah Pemuda yang menjadi tonggak sejarah persatuan bangsa</li>
+                    <li data-number="5">Lagu Indonesia Raya karya W.R. Supratman pertama kali dikumandangkan dalam kongres ini</li>
+                </ul>
+            </div>
+
+            <!-- Isi Sumpah Pemuda -->
+            <div class="sumpah-box">
+                <h3>ISI SUMPAH PEMUDA</h3>
+                <ol>
+                    <li>Kami putra dan putri Indonesia, mengaku bertumpah darah yang satu, tanah air Indonesia</li>
+                    <li>Kami putra dan putri Indonesia, mengaku berbangsa yang satu, bangsa Indonesia</li>
+                    <li>Kami putra dan putri Indonesia, menjunjung bahasa persatuan, bahasa Indonesia</li>
+                </ol>
+            </div>
+
+            <!-- Makna dan Nilai -->
+            <div class="section">
+                <h2 class="section-title">Makna dan Nilai Sumpah Pemuda</h2>
+                <ul class="points">
+                    <li data-number="1"><strong>Persatuan:</strong> Mengajarkan kita untuk bersatu dalam keberagaman, mengatasi perbedaan suku, agama, ras, dan golongan</li>
+                    <li data-number="2"><strong>Nasionalisme:</strong> Menumbuhkan rasa cinta tanah air dan bangga menjadi bagian dari Indonesia</li>
+                    <li data-number="3"><strong>Keberanian:</strong> Para pemuda berani mengambil sikap tegas untuk kemerdekaan di tengah penjajahan</li>
+                    <li data-number="4"><strong>Visi Masa Depan:</strong> Memiliki pandangan jauh ke depan untuk membangun bangsa yang besar dan berdaulat</li>
+                    <li data-number="5"><strong>Bahasa Pemersatu:</strong> Bahasa Indonesia sebagai alat komunikasi yang menyatukan seluruh bangsa</li>
+                </ul>
+            </div>
+
+            <div class="quote">
+                "Pemuda adalah harapan bangsa, dan persatuan adalah kunci kekuatan kita"
+            </div>
+
+            <!-- Relevansi di Era Modern -->
+            <div class="section">
+                <h2 class="section-title">Relevansi di Era Modern</h2>
+                <ul class="points">
+                    <li data-number="1">Di era digital ini, semangat Sumpah Pemuda harus tetap menyala dalam diri setiap generasi muda</li>
+                    <li data-number="2">Kita harus bijak menggunakan media sosial untuk menyebarkan persatuan, bukan perpecahan</li>
+                    <li data-number="3">Hoaks dan ujaran kebencian adalah musuh persatuan yang harus kita lawan bersama</li>
+                    <li data-number="4">Pemuda Indonesia harus menjadi agen perubahan positif dalam membangun bangsa</li>
+                    <li data-number="5">Prestasi di berbagai bidang adalah bentuk nyata dari semangat Sumpah Pemuda</li>
+                </ul>
+            </div>
+
+            <!-- Ajakan -->
+            <div class="section">
+                <h2 class="section-title">Ajakan untuk Generasi Muda</h2>
+                <ul class="points">
+                    <li data-number="1">Mari kita jaga persatuan dan kesatuan bangsa dengan tidak mudah terprovokasi oleh isu-isu yang memecah belah</li>
+                    <li data-number="2">Tingkatkan prestasi di bidang pendidikan, olahraga, seni, dan teknologi untuk mengharumkan nama Indonesia</li>
+                    <li data-number="3">Hormati keberagaman sebagai kekayaan bangsa, bukan sebagai sumber perpecahan</li>
+                    <li data-number="4">Gunakan bahasa Indonesia dengan baik dan benar sebagai identitas nasional</li>
+                    <li data-number="5">Jadilah pemuda yang berintegritas, berkarakter, dan berkontribusi nyata bagi bangsa</li>
+                    <li data-number="6">Terus belajar dan berinovasi untuk menghadapi tantangan global dengan tetap menjunjung nilai-nilai Pancasila</li>
+                </ul>
+            </div>
+
+            <!-- Penutup -->
+            <div class="section">
+                <h2 class="section-title">Penutup</h2>
+                <ul class="points">
+                    <li data-number="1">Hadirin yang berbahagia, semangat Sumpah Pemuda bukan hanya untuk diperingati, tetapi untuk diamalkan</li>
+                    <li data-number="2">Mari kita jadikan momentum ini sebagai refleksi dan komitmen baru untuk membangun Indonesia yang lebih baik</li>
+                    <li data-number="3">Bersama kita kuat, bersatu kita teguh, bercerai kita runtuh</li>
+                    <li data-number="4">Demikian pidato yang dapat saya sampaikan. Mohon maaf apabila ada kata-kata yang kurang berkenan</li>
+                    <li data-number="5">Wassalamualaikum Warahmatullahi Wabarakatuh</li>
+                </ul>
+            </div>
+
+            <div class="quote">
+                "Satu Nusa, Satu Bangsa, Satu Bahasa: Indonesia!"
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🇮🇩 Dirgahayu Sumpah Pemuda 🇮🇩</p>
+            <p>Jayalah Indonesia!</p>
+        </div>
+    </div>
+</body>
+</html>
